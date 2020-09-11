@@ -1,0 +1,8 @@
+header, footer{
+	background-color: orange;
+	text-align: center;
+}
+
+nav > [href]{
+	background-color: chocolate;
+}
