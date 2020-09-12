@@ -9,16 +9,45 @@ header, footer{
 
 .menu{
 	background-color: LightSeaGreen;
-	text-decoration: none;
 	padding: 4px;
-	/*border-radius: 3px;*/
-	flex-flow: row wrap;
-	align-items: center;
-	justify-content: space-between;
+	border-style: ridge;
+	border-width: 5;
+	border-radius: 3px;
+	border-color: black;
 }
 
-[href]{
+.menu:hover{
+  background-color: #9E9E9E;
+}
+
+.separadorNav{
+	background-color: LightSeaGreen;
+	padding: 4px;
+	border-style: ridge;
+	border-width: 5;
+	border-color: black;
+}
+
+menu{
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+[href]:not(.link){
 	text-decoration: none;
+	color: black;
+}
+
+#instrumentos [href]{
+	text-decoration: none;
+	background-color: DarkTurquoise;
+	padding: 4px;
+	border-radius: 3px;
+}
+
+#instrumentos [href]:hover{
+  background-color: #9E9E9E;
 }
 
 #suursales{
@@ -31,3 +60,6 @@ header, footer{
 	font-weight: bold;
 }
 
+#redesSociales  i{
+	color: black;
+}
