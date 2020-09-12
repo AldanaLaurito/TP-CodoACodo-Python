@@ -63,3 +63,11 @@ menu{
 #redesSociales  i{
 	color: black;
 }
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo{
+	font-family: Verdana, Geneva, sans-serif;
+}
