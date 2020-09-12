@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Web del Músico</title>
+	<link rel="stylesheet" href="estilos\estilos.css">
+	<script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
+</head>
+	<body>
+		<header>
+			<nav>
+				<a class="menu" href="inicio.html"  >Inicio</a>
+				<a class="menu" href="acerca-de.html">Acerca de la web</a>
+				<a class="menu" href="contacto.html">Contacto</a>
+				<a class="menu" href="sucursales.html">Sucursales</a>
+				<a class="menu" href="registro.html">Registro</a>    
+			</nav>
+			<h1>La Web del Músico</h1>
+		</header>
+		<menu>    
+			<p align=center>&nbsp;</p>
+			<h1 align=center><font size="+1">Se enviará la siguiente información:</font></h1>
+			<table border="1" align=center width="226">
+			  <tr>
+				<th align="center">Campo</th>
+				<th align="center">Valor</th>
+			  </tr>
+			  
+			<script language="javascript">
+				var args = location.search.substr(1).split('&');
+				for (var i = 0; i < args.length; ++i) {
+				  var parts = args[i].split('=');
+				  if (parts != null) {
+					var field = parts[0];
+					var value = parts[1];
+					if (value == null) {
+					  value = "null"
+					}
+					else {
+					  value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+					}
+
+					document.writeln('<tr><td align="center">' + field + '</td>');
+					document.writeln('<td align="center">' + value + '</td></tr>');
+				  }
+				}
+			</script>
+				<noscript>
+					<tr>
+						<td>
+						<p>Por favor, active el javascript de su navegador.</p>
+
+						<p>En Microsoft Internet Explorer 4 o veriones posteriores:</p>
+							<ul>
+								<li>En el menú de "Tools" (en IE 4, es el menú "View"), seleccione "Internet Options".</li>
+								<li>Haga Click en la pestaña "Security".</li>
+								<li>Haga Click en el botón "Custom Level". (En IE 4, seleccione "Custom"
+								y luego haga click en "Settings...".)</li>
+								<li>Debajo de "Active scripting" asegurese que este seleccionada la opción "Enable".</li>
+							</ul>
+
+							<p>En Netscape versión 4 o veriones posteriores:</p>
+							<ul>
+								<li>Desde el menu <b>Edit</b>, seleccione <b>Preferences</b>.</li>
+								<li>En la lista <b>Category</b> a la izquierda, haga click en "Advanced".</li>
+								<li>EN el panel a la derecha,  asegurese que este seleccionada la opción "Enable JavaScript".</li>
+								<li>Haga click en el botón <b>OK</b>.</li>
+							</ul>
+						</td>
+					</tr>
+				</noscript>
+			</table>
+		 </menu>
+		<footer>
+			<br>
+			<div id="redesSociales">
+				<a href="https://www.twitter.com" target="blank_"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+				<a href="https://www.facebook.com" target="blank_"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+				<a href="https://www.pinterest.com" target="blank_"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a>
+				<a href="https://www.instagram.com" target="blank_"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+				<a href="https://www.youtube.com" target="blank_"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a>
+				<a href="https://www.linkedin.com/in/aldana-laurito/" target="blank_"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
+				<a href="https://github.com/AldanaLaurito?tab=repositories" target="blank_"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+			</div>
+			<br>
+			<i>Derechos reservados @2020 </i>
+			<br><br>
+		</footer>      
+	</body>
+</html>

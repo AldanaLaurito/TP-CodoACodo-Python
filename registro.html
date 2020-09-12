@@ -10,53 +10,72 @@
 <body>
     <header>
         <nav>
-            <a class="menu" href="inicio.html"  >Inicio</a>
-            <a class="menu" href="acerca-de.html">Acerca de la web</a>
-            <a class="menu" href="contacto.html">Contacto</a>
-			<a class="menu" href="sucursales.html">Sucursales</a>
-			<a class="menu" href="registro.html">Registro</a>    
+			<div id="menu">
+				<a class="menu" href="inicio.html">Inicio</a>
+				<b class="separadorNav">|</b>
+				<a class="menu" href="acerca-de.html">Acerca de la web</a>
+				<b class="separadorNav">|</b>
+				<a class="menu" href="contacto.html">Contacto</a>
+				<b class="separadorNav">|</b>
+				<a class="menu" href="sucursales.html">Sucursales</a>
+				<b class="separadorNav">|</b>
+				<a class="menu" href="registro.html">Registro</a> 
+			</div>
         </nav>
         <h1>La Web del Músico</h1>
     </header>
     <menu>
-        <h2>Formulario de Registro</h2>
-		<img src="imagenes\grabacion.jpeg" alt="Estudio de Grabación" width="500" height="249"></img>
-		</br></br>
-		<form>
-			<label for="firstname" class="requerido">Nombre: </label> <input type="text" name="firstname" placeholder="Ingrese su nombre aquí..." required></br></br>
-			<label for="lastname" class="requerido">Apellido: </label> <input type="text" name="lastname" placeholder="Ingrese su apellido aquí..." required></br></br>
-			<label for="username" class="requerido">Usuario: </label> <input type="text" name="username" placeholder="Ingrese su usuario aquí..." required></br></br>
-			<label for="password" class="requerido">Contraseña: </label> <input type="password" name="password" placeholder="Ingrese su contraseña aquí..." required></br></br>
-			<label for="street">Dirección: </label> <input type="text" name="address" placeholder="Ingrese su dirección aquí..."></br></br>
-			<label for="city">Ciudad: </label> <input type="text" name="city" value="C.A.B.A."></br></br>
-			<label for="zipcode">Código Postal: </label> <input type="text" name="zipcode" placeholder="Ingrese su código postal..."></br></br>
-			<label for="telephone">Teléfono: </label> <input type="tel" name="telephone" pattern="[0-9]{1} [0-9]{2} [0-9]{4}-[0-9]{4}" placeholder="9 11 1234-5678" title="Por favor, ingrese un teléfono con el formato 9 11 1234-5678" input="tel"></br></br>
-			<label for="email" class="requerido">Dirección de email: </label> <input type="email" name="email" placeholder="direccion@ejemplo.com" title="Por favor, ingrese una dirección de correo con el formato direccion@ejemplo.com" input="email" required ></br></br>
-			<label for="BirthDate">Fecha de Nacimiento: </label> <input type="date" name="birthdate" input="numeric"></br></br>
-			<p>Género:
-				<input type="radio" name="gender" value="hombre" checked>Hombre
-				<input type="radio" name="gender" value="mujer">Mujer
-				<input type="radio" name="gender" value="otro">Otro
-			</p>
-			<p>Estudios:
-				<input type="checkbox" name="estudio" value="primarios">Primarios
-				<input type="checkbox" name="estudio" value="secundarios">Secundarios
-				<input type="checkbox" name="estudio" value="terciarios">Terciarios
-				<input type="checkbox" name="estudio" value="universitarios">Universitarios
-				<input type="checkbox" name="estudio" value="otro">Otro
-			</p>
-			<input type="submit" value="Enviar">
-		</form>
+		<div id="formularioRegistro1">
+			<h2>Formulario de Registro</h2>
+			<img src="imagenes\grabacion.jpeg" alt="Estudio de Grabación" width="500" height="249"></img>
+			</br></br>
+			<form action="show_data.html" target="_blank">
+				<label for="firstname" class="requerido">Nombre: </label> <input type="text" name="firstname" placeholder="Ingrese su nombre aquí..." required></br></br>
+				<label for="lastname" class="requerido">Apellido: </label> <input type="text" name="lastname" placeholder="Ingrese su apellido aquí..." required></br></br>
+				<label for="username" class="requerido">Usuario: </label> <input type="text" name="username" placeholder="Ingrese su usuario aquí..." required></br></br>
+				<label for="password" class="requerido">Contraseña: </label> <input type="password" name="password" placeholder="Ingrese su contraseña aquí..." required></br></br>
+				<label for="street">Dirección: </label> <input type="text" name="address" placeholder="Ingrese su dirección aquí..."></br></br>
+				<label for="city">Ciudad: </label> <input type="text" name="city" value="C.A.B.A."></br></br>
+				<label for="zipcode">Código Postal: </label> <input type="text" name="zipcode" placeholder="Ingrese su código postal..."></br></br>
+				<label for="telephone">Teléfono: </label> <input type="tel" name="telephone" pattern="[0-9]{1} [0-9]{2} [0-9]{4}-[0-9]{4}" placeholder="9 11 1234-5678" title="Por favor, ingrese un teléfono con el formato 9 11 1234-5678" input="tel"></br></br>
+				<label for="email" class="requerido">Dirección de email: </label> <input type="email" name="email" placeholder="direccion@ejemplo.com" title="Por favor, ingrese una dirección de correo con el formato direccion@ejemplo.com" input="email" required ></br></br>
+				<label for="BirthDate">Fecha de Nacimiento: </label> <input type="date" name="birthdate" input="numeric"></br></br>
+				<p>Género:
+					<select name="gender">
+						<option value="hombre">Hombre</option>
+						<option value="mujer">Mujer</option>
+						<option value="otro">Otro</option>
+					</select>
+					
+				</p>
+				<p>¿Tiene experiencia musical de algún tipo?
+					<input type="radio" name="experienciaInstrumentos" value="si" checked>Sí
+					<input type="radio" name="experienciaInstrumentos" value="no">No
+				</p>
+				<p>Comentarios:<br>
+					<textarea name="message" id="message" rows="6" cols="40">Ingrese su comentario...</textarea>
+				</p>
+				<p>
+					<input type="checkbox" name="newsletter" value="Si">¿Desea recibir boletines informativos de nuestros posteos?
+				</p>
+				<input type="submit" value="Enviar">
+			</form>
+		</div>
     </menu>
-    <footer> 
-		<a href="https://www.twitter.com" target="blank_"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a href="https://www.facebook.com" target="blank_"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-		<a href="https://www.pinterest.com" target="blank_"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-		<a href="https://www.instagram.com" target="blank_"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-		<a href="https://www.linkedin.com/in/aldana-laurito/" target="blank_"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    <footer>
 		<br>
-        <p>Derechos reservados @2020 </p>
-        <br>
-    </footer>       
+		<div id="redesSociales">
+			<a href="https://www.twitter.com" target="blank_"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+			<a href="https://www.facebook.com" target="blank_"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+			<a href="https://www.pinterest.com" target="blank_"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a>
+			<a href="https://www.instagram.com" target="blank_"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+			<a href="https://www.youtube.com" target="blank_"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a>
+			<a href="https://www.linkedin.com/in/aldana-laurito/" target="blank_"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
+			<a href="https://github.com/AldanaLaurito?tab=repositories" target="blank_"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+		</div>
+		<br>
+        <i>Derechos reservados @2020 </i>
+        <br><br>
+    </footer>        
 </body>
 </html>

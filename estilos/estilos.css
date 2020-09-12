@@ -1,14 +1,20 @@
+body{
+	background-color: AliceBlue;
+}
+
 header, footer{
-	background-color: orange;
+	background-color: MediumTurquoise;
 	text-align: center;
-	margin: 5px;
 }
 
 .menu{
-	background-color: chocolate;
+	background-color: LightSeaGreen;
 	text-decoration: none;
-	padding: 3px;
-	border-radius: 3px;
+	padding: 4px;
+	/*border-radius: 3px;*/
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-between;
 }
 
 [href]{
@@ -16,9 +22,12 @@ header, footer{
 }
 
 #suursales{
-	justify-content:space-around;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .requerido{
 	font-weight: bold;
 }
+
