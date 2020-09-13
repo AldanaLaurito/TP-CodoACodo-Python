@@ -132,3 +132,35 @@ nav [href]:hover, #redesSociales [href]:hover{
 	transform: rotate(2deg) scale(1.2, 1.2) translate(-10px, -10px);
 	background-color: #a73030;
 }
+
+textarea, select, input:not([type="submit"]){
+  padding: 10px 15px;
+  margin: 8px 15px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+textarea:focus, select:focus,input:not([type="submit"]):focus {
+  border: 2px solid #555;
+}
+
+input[type=submit] {
+  color: white;
+  padding: 12px 20px;
+  border: 1.5px solid #1199A6;
+  border-radius: 7px;
+  cursor: pointer;
+  background: #258fba;
+  background: radial-gradient(circle, #258fba 34%, #41ac8d 81%);
+}
+
+input[type=submit]:hover {
+  color: black;
+  background: #1199A6;
+  border: 1.5px solid #1199A6;
+  background: radial-gradient(circle, #84deac 0%, #258fba 97%);
+}
