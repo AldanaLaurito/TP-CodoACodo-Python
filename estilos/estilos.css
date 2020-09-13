@@ -22,10 +22,11 @@ header h1{
 }
 
 nav{
-	width: 560px;/*ancho del menu(el contenedor es un div)*/
+	width: 540px;
 	padding:10px;
-	background-color:#004080;/*color de fondo del contenedor (div)*/
-	margin:auto;/*el menu esta centrado y se desplaza 50px hacia abajo*/
+	background-color:#004080;
+	margin:auto;
+	border-radius: 3px;
 }
 
 .menu{
@@ -35,6 +36,14 @@ nav{
 	border-width: 5;
 	border-radius: 3px;
 	border-color: black;
+}
+
+.detallesInstrumentos table{
+	width: 120%;
+}
+
+#tablaCreditos{
+	width: 40%;
 }
 
 .menu:hover{
@@ -99,7 +108,7 @@ body{
 	font-family: Verdana, Geneva, sans-serif;
 }
 
-#instrumentos [href], [href]:not(.link){
+nav [href]{
 	text-decoration: none;
 	color: black;
 	background-color: DarkTurquoise;
@@ -107,6 +116,19 @@ body{
 	padding: 3px;
 }
 
-#instrumentos [href]:hover, [href]:not(.link):hover{
-  background-color: #9E9E9E;
+nav [href]:hover, #redesSociales [href]:hover{
+	text-decoration: none;
+	background-color: #9E9E9E;
+	border-radius: 3px;
+	padding: 3px;
+}
+
+.imagenInicio:hover{
+	box-shadow: 20px 20px 20px rgba(0, 0, 0, .2);
+	-moz-transform: rotate(2deg) scale(1.2, 1.2) translate(-10px, -10px);
+	-ms-transform: rotate(2deg) scale(1.2, 1.2) translate(-10px, -10px);
+	-o-transform: rotate(2deg) scale(1.2, 1.2) translate(-10px, -10px);
+	-webkit-transform: rotate(2deg) scale(1.2, 1.2) translate(-10px, -10px);
+	transform: rotate(2deg) scale(1.2, 1.2) translate(-10px, -10px);
+	background-color: #a73030;
 }
