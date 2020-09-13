@@ -18,20 +18,14 @@ header{
 }
 
 header h1{
-	font-size: 220%;
+	font-size: 220%
 }
 
-[href]:not(.link){
-	text-decoration: none;
-	color: black;
-	text-decoration: none;
-	background-color: DarkTurquoise;
-	padding: 4px;
-	border-radius: 3px;
-}
-
-[href]:not(.link):hover{
-  background-color: #9E9E9E;
+nav{
+	width: 560px;/*ancho del menu(el contenedor es un div)*/
+	padding:10px;
+	background-color:#004080;/*color de fondo del contenedor (div)*/
+	margin:auto;/*el menu esta centrado y se desplaza 50px hacia abajo*/
 }
 
 .menu{
@@ -103,4 +97,16 @@ body{
 
 .titulo{
 	font-family: Verdana, Geneva, sans-serif;
+}
+
+#instrumentos [href], [href]:not(.link){
+	text-decoration: none;
+	color: black;
+	background-color: DarkTurquoise;
+	border-radius: 3px;
+	padding: 3px;
+}
+
+#instrumentos [href]:hover, [href]:not(.link):hover{
+  background-color: #9E9E9E;
 }
