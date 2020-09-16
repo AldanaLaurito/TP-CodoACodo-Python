@@ -26,6 +26,8 @@ footer{
 header{
 	padding: 1rem;
 	padding-top: 0.1rem;
+	padding-bottom: 0rem;
+	padding-right: 0rem;
 }
 
 header h1{
@@ -33,10 +35,8 @@ header h1{
 }
 
 nav{
-	width: 540px;
 	padding:10px;
 	background-color:#004080;
-	margin:auto;
 	border-radius: 3px;
 }
 
