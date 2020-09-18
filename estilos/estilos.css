@@ -15,6 +15,10 @@ header{
 	background: -webkit-linear-gradient(top, MediumTurquoise 0%,#88bacf 95%);
 	background: linear-gradient(to bottom, MediumTurquoise 0%,#88bacf 95%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='MediumTurquoise', endColorstr='#88bacf',GradientType=0 );
+	padding-left: 0rem;
+	padding-top: 0.1rem;
+	padding-bottom: 0rem;
+	padding-right: 0rem;
 }
 
 footer{
@@ -27,13 +31,6 @@ footer{
 	background: -webkit-linear-gradient(bottom, MediumTurquoise 0%,#88bacf 95%);
 	background: linear-gradient(to top, MediumTurquoise 0%,#88bacf 95%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#88bacf', endColorstr='MediumTurquoise',GradientType=0 );
-}
-
-header{
-	padding: 1rem;
-	padding-top: 0.1rem;
-	padding-bottom: 0rem;
-	padding-right: 0rem;
 }
 
 header h1{
