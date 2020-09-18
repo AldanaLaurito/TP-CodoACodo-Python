@@ -197,6 +197,16 @@ input[type=submit]:active {
 		width: 80%;
 		height: 50%;
 	}
+	
+	textarea {
+		width: 150px;
+		height: 100px;
+	}
+	
+	iframe {
+		max-width: 100%;
+		height: auto;
+	}
 }
 
 /*tablets*/
@@ -224,6 +234,16 @@ input[type=submit]:active {
 	.imagenDetalle{
 		width: 90%;
 		height: 60%;
+	}
+	
+	textarea {
+		width: 400px;
+		height: 150px;
+	}
+	
+	iframe {
+		max-width: 100%;
+		height: auto;
 	}
 }
 
@@ -258,5 +278,10 @@ input[type=submit]:active {
 		background-color: #9E9E9E;
 		border-radius: 3px;
 		padding: 3px;
+	}
+	
+	textarea {
+		width: 400px;
+		height: 150px;
 	}
 }
