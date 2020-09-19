@@ -38,7 +38,7 @@ header h1{
 }
 
 nav{
-	padding:10px;
+	padding:7px;
 	background-color:#004080;
 	border-radius: 3px;
 }
@@ -126,6 +126,7 @@ nav [href]{
 	background-color: DarkTurquoise;
 	border-radius: 3px;
 	padding: 3px;
+	display: inline-block;
 }
 
 textarea, select, input:not([type="submit"]){
@@ -191,15 +192,17 @@ input[type=submit]:active {
 	}
 	
 	textarea {
-		width: 150px;
-		height: 100px;
+		width: 60%;
+		height: 70px;
 	}
 	
 	iframe {
-		max-width: 100%;
+		max-width: 90%;
 		height: 60%;
-		margin-bottom: 6px;
-		padding: 6px;
+	}
+	
+	#sucursales div{
+		margin: 6px;
 	}
 }
 
@@ -226,13 +229,17 @@ input[type=submit]:active {
 	}
 	
 	textarea {
-		width: 150px;
-		height: 100px;
+		width: 80%;
+		height: 90px;
 	}
 	
 	iframe {
 		max-width: 100%;
 		height: 70%;
+	}
+	
+	#sucursales div{
+		margin: 6px;
 	}
 }
 
