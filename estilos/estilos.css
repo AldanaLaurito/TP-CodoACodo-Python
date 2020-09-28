@@ -76,7 +76,7 @@ main{
 	margin: 20px;
 }
 
-.detallesInstrumentos, #instrumentos, #sucursales{
+.detallesInstrumentos, #instrumentos, #sucursales, #servicios, #productos, #clientesSocios{
 	display: flex;
 	justify-content: flex-start;
 	flex-flow: row wrap;
@@ -85,7 +85,7 @@ main{
 	padding: 0.5rem;
 }
 
-.detallesInstrumentos *, #instrumentos *, #sucursales *{
+.detallesInstrumentos *, #instrumentos *, #sucursales *, #servicios *, #productos *, #clientesSocios{
 	flex: 0 300px;
 	margin-right: 2rem;
 	padding: 0;
