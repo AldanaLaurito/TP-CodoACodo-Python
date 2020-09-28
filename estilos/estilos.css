@@ -216,6 +216,22 @@ input[type=submit]:active {
 	form{
 		display: inline-grid;
 	}
+	
+	.separadorNav{
+		display: none;
+	}
+	
+	header{
+		display: inline-grid;
+		
+	}
+	
+	.menu{
+		width: 98%;
+		margin: 2px;
+		padding: 3px;
+		font-size: 120%
+	}
 }
 
 /*tablets*/
@@ -264,6 +280,22 @@ input[type=submit]:active {
 	
 	form{
 		display: inline-grid;
+	}
+	
+	.separadorNav{
+		display: none;
+	}
+	
+	header{
+		display: inline-grid;
+		
+	}
+	
+	.menu{
+		width: 98%;
+		margin: 2px;
+		padding: 3px;
+		font-size: 120%
 	}
 }
 
