@@ -212,6 +212,10 @@ input[type=submit]:active {
 	#reproductoresGuitarra iframe{
 		height: 160px;
 	}
+	
+	form{
+		display: inline-grid;
+	}
 }
 
 /*tablets*/
@@ -256,6 +260,10 @@ input[type=submit]:active {
 	
 	#reproductoresGuitarra iframe{
 		height: 180px;
+	}
+	
+	form{
+		display: inline-grid;
 	}
 }
 
