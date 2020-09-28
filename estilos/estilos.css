@@ -204,23 +204,31 @@ input[type=submit]:active {
 	#sucursales div{
 		margin: 6px;
 	}
+	
+	#detalleGuitarra{
+		display: inline-block;
+	}
+	
+	#reproductoresGuitarra iframe{
+		height: 160px;
+	}
 }
 
 /*tablets*/
 @media screen and (max-width: 1280px){
 	img{
-		width: 90%;
-		height: 60%;
+		width: 85%;
+		height: 55%;
 	}
 	
 	#imgGuitarra{
-		width: 90%;
-		height: 80%;
+		width: 85%;
+		height: 75%;
 	}
 	
 	#imgGuitarraElec{
-		width: 90%;
-		height: 10%;
+		width: 85%;
+		height: 15%;
 	}
 	
 	.imagenInicio, .imagenDetalle{
@@ -240,6 +248,14 @@ input[type=submit]:active {
 	
 	#sucursales div{
 		margin: 6px;
+	}
+	
+	#detalleGuitarra{
+		display: inline-block;
+	}
+	
+	#reproductoresGuitarra iframe{
+		height: 180px;
 	}
 }
 
