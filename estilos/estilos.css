@@ -43,7 +43,7 @@ nav{
 	width: 100%;
 	text-decoration: none;
 	background-color:#004080;
-	padding: 4px;
+	padding: 0.5rem;
 }
 
 nav [href]{
@@ -54,20 +54,21 @@ nav [href]{
 .menu{
 	background-color: LightSeaGreen;
 	border-style: ridge;
-	border-width: 3px;
+	border-width: 0.2rem;
 	border-radius: 5px;
 	border-color: black;
 	text-decoration: none;
 	color: black;
 	background-color: DarkTurquoise;
 	border-radius: 3px;
-	padding: 6px;
+	padding: 0.3rem;
 	display: inline-block;
 	text-decoration: none;
 }
 
 #menu{
 	list-style: none;
+	margin-bottom: 0rem;
 }
 
 .detallesInstrumentos table{
@@ -76,14 +77,6 @@ nav [href]{
 
 #tablaCreditos{
 	width: 40%;
-}
-
-.separadorNav{
-	background-color: LightSeaGreen;
-	padding: 4px;
-	border-style: ridge;
-	border-width: 5;
-	border-color: black;
 }
 
 main{
@@ -329,7 +322,6 @@ input[type=submit]:active {
 		text-decoration: none;
 		background-color: #9E9E9E;
 		border-radius: 3px;
-		padding: 3px;
 	}
 	
 	textarea {
