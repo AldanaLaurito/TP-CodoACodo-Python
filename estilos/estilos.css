@@ -42,16 +42,13 @@ header h1{
 	padding: 1rem;
 }
 
-#barraNav{
+nav {
 	border-radius: 3px;
 	display: inline-block;
 	width: 100%;
 	text-decoration: none;
-	background-color:#004080;
+	background-color:MidnightBlue;/* #004080, SteelBlue, MidnightBlue*/
 	padding: 0.5rem;
-}
-#barraNav button{
-	color: white;
 }
 
 nav [href]{
@@ -186,10 +183,6 @@ input[type=submit]:active {
   margin: 1rem auto;
 }
 
-nav button{
-	color: white;
-}
-
 /*moviles*/
 @media screen and (max-width: 640px){
 	img{
@@ -238,10 +231,6 @@ nav button{
 		display: inline-grid;
 	}
 	
-	.separadorNav{
-		display: none;
-	}
-	
 	.menu{
 		width: 50%;
 		margin: 2px;
@@ -262,6 +251,10 @@ nav button{
 		background-color: #9E9E9E;
 		padding: 0.1rem;
 		border-radius: 3px;
+	}
+	
+	header{
+		width: 100%;
 	}
 }
 
@@ -313,11 +306,7 @@ nav button{
 		display: inline-grid;
 	}
 	
-	.separadorNav{
-		display: none;
-	}
-	
-	header, header{
+	header{
 		display: inline-grid;
 		
 	}
@@ -344,7 +333,7 @@ nav button{
 		border-radius: 3px;
 	}
 	
-	#barraNav{
+	header{
 		width: 100%;
 	}
 }
@@ -366,10 +355,6 @@ nav button{
 		background-color: #a73030;
 	}
 	
-	.menu:hover{
-		background-color: #9E9E9E;
-	}
-	
 	input[type=submit]:hover {
 		color: black;
 		border: 2px solid #555;
@@ -380,6 +365,10 @@ nav button{
 		background-color: #9E9E9E;
 		padding: 0.1rem;
 		border-radius: 3px;
+	}
+	
+	.nav-link:hover{
+		background-color: Gray; /* Gray, DimGray, LightSlateGray */
 	}
 	
 	textarea {
@@ -393,9 +382,5 @@ nav button{
 
 	#clientesSocios img{
 		width: 200%;
-	}
-	
-	#barraNav button{
-		display: none;
 	}
 }

@@ -14,17 +14,24 @@
 <body>
     <header>
 		<h1 class="titulo">La Web del Músico</h1>
-        <nav>
-			<ul id="menu">
-				<li class="menu"><a href="index.html">Inicio</a></li>
-				<li class="menu"><a href="acerca-de.html">Acerca de la web</a></li>
-				<li class="menu"><a href="contacto.html">Contacto</a></li>
-				<li class="menu"><a href="sucursales.html">Sucursales</a></li>
-				<li class="menu"><a href="registro.html">Registro</a></li>
-				<li class="menu"><a href="productos-servicios.html">Productos y Servicios</a></li>
-				<li class="menu"><a href="clientes-socios.html">Clientes y Socios</a></li>
-			</ul>
-        </nav>
+        <div id="barraNav">
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<a class="navbar-brand nav-link" href="index.html">Inicio</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul id="menu" class="navbar-nav">
+						<li class="menu nav-item"><a class="nav-link" href="acerca-de.html">Acerca de la web</a></li>
+						<li class="menu nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+						<li class="menu nav-item"><a class="nav-link active" href="sucursales.html">Sucursales</a></li>
+						<li class="menu nav-item"><a class="nav-link" href="registro.html">Registro</a></li>
+						<li class="menu nav-item"><a class="nav-link" href="productos-servicios.html">Productos y Servicios</a></li>
+						<li class="menu nav-item"><a class="nav-link" href="clientes-socios.html">Clientes y Socios</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
     </header>
     <main>
         <h2 class="titulo">Sucursales</h2>
