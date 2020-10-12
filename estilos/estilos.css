@@ -93,7 +93,7 @@ main{
 	margin: 2.5rem;
 }
 
-.detallesInstrumentos, #instrumentos, #sucursales, #servicios, #productos, #clientesSocios{
+.detallesInstrumentos, #instrumentos, #sucursales, #servicios, #productos{
 	display: flex;
 	justify-content: flex-start;
 	flex-flow: row wrap;
@@ -102,7 +102,7 @@ main{
 	padding: 0.5rem;
 }
 
-.detallesInstrumentos *, #instrumentos *, #sucursales *, #servicios *, #productos *, #clientesSocios{
+.detallesInstrumentos *, #instrumentos *, #sucursales *, #servicios *, #productos *{
 	flex: 0 300px;
 	margin-right: 2rem;
 	padding: 0;
@@ -179,7 +179,13 @@ input[type=submit]:active {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#009ec3',GradientType=0 );
 }
 
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.35);
+}
 
+.carousel {
+  margin: 1rem auto;
+}
 
 /*moviles*/
 @media screen and (max-width: 640px){
@@ -238,6 +244,14 @@ input[type=submit]:active {
 		margin: 2px;
 		padding: 3px;
 		font-size: 70%
+	}
+	
+	#clientesSocios{
+		width: 80%;
+	}
+
+	#clientesSocios img{
+		width: 190%;
 	}
 }
 
@@ -304,6 +318,14 @@ input[type=submit]:active {
 		padding: 3px;
 		font-size: 120%
 	}
+	
+	#clientesSocios{
+		width: 100%;
+	}
+
+	#clientesSocios img{
+		width: 200%;
+	}
 }
 
 /*desktop*/
@@ -342,5 +364,13 @@ input[type=submit]:active {
 	textarea {
 		width: 400px;
 		height: 150px;
+	}
+	
+	#clientesSocios{
+		width: 60%;
+	}
+
+	#clientesSocios img{
+		width: 200%;
 	}
 }

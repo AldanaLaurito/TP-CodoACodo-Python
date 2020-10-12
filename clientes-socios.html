@@ -27,32 +27,60 @@
         </nav>
     </header>
     <main>
+	
 		<h2 class="titulo">Nuestros Clientes y Socios</h2>
-		<div id="clientesSocios">
-			<figure>  
-			   <img src="imagenes/clientesSocios/cantaAutorJamesBarnes.jpg" alt="Canta-autor James Barnes" /> 
-			   <figcaption>  
-				  <p>Canta-autor James Barnes </p>  
-			   </figcaption>
-			</figure>
-			<figure>  
-			   <img src="imagenes/clientesSocios/guitarristaJamesBrown.jpg" alt="Guitarrista James Brown" />  
-			   <figcaption>  
-				  <p>Guitarrista James Brown </p>  
-			   </figcaption>
-			</figure>
-			<figure>  
-			   <img src="imagenes/clientesSocios/pianistaNatashaWidow.jpg" alt="Pianista Natasha Widow" />  
-			   <figcaption>  
-				  <p>Pianista Natasha Widow </p>  
-			   </figcaption>
-			</figure>
-			<figure>  
-			   <img src="imagenes/clientesSocios/youtuberKarenFlauta.jpg" alt="Youtuber KarenFlute" /> 
-			   <figcaption>  
-				  <p>Youtuber KarenFlute </p>  
-			   </figcaption>
-			</figure>
+		
+		<div id="contenidoClientesSocios">
+			<div id="clientesSocios" class="carousel slide" data-ride="carousel">
+
+				<!-- Indicators -->
+				<ul class="carousel-indicators">
+					<li data-target="#clientesSocios" data-slide-to="0" class="active"></li>
+					<li data-target="#clientesSocios" data-slide-to="1"></li>
+					<li data-target="#clientesSocios" data-slide-to="2"></li>
+					<li data-target="#clientesSocios" data-slide-to="3"></li>
+				</ul>
+				
+				<!-- The slideshow -->
+				<div class="carousel-inner">
+					<div class="carousel-item text-center active">
+						<img class="img-fluid" src="imagenes/clientesSocios/cantaAutorJamesBarnes.jpg" alt="Canta-autor James Barnes" />
+						<div class="carousel-caption">
+							<h3>James Barnes</h3>
+							<p>Canta-autor</p>
+						</div>
+					</div>
+					<div class="carousel-item text-center">
+						<img class="img-fluid" src="imagenes/clientesSocios/guitarristaJamesBrown.jpg" alt="Guitarrista James Brown" /> 
+						<div class="carousel-caption">
+							<h3>James Brown</h3>
+							<p>Guitarrista</p>
+						</div>
+					</div>
+					<div class="carousel-item text-center">
+						<img class="img-fluid" src="imagenes/clientesSocios/pianistaNatashaWidow.jpg" alt="Pianista Natasha Widow" />
+						<div class="carousel-caption">
+							<h3>Natasha Widow</h3>
+							<p>Pianista</p>
+						</div>
+					</div>
+					<div class="carousel-item text-center">
+						<img class="img-fluid" src="imagenes/clientesSocios/youtuberKarenFlauta.jpg" alt="Youtuber KarenFlute" /> 
+						<div class="carousel-caption">
+							<h3>KarenFlute</h3>
+							<p>Youtuber</p>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Left and right controls -->
+				<a class="carousel-control-prev" href="#clientesSocios" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#clientesSocios" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+			</div>
 		</div>
     </main>
     <footer>
