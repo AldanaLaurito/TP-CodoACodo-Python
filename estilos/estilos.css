@@ -42,7 +42,7 @@ header h1{
 	padding: 1rem;
 }
 
-nav{
+#barraNav{
 	border-radius: 3px;
 	display: inline-block;
 	width: 100%;
@@ -50,22 +50,21 @@ nav{
 	background-color:#004080;
 	padding: 0.5rem;
 }
+#barraNav button{
+	color: white;
+}
 
 nav [href]{
 	text-decoration: none;
-	color: black;
+	color: white;
 	padding: 0.1rem;
 }
 
 .menu{
-	background-color: LightSeaGreen;
-	border-style: ridge;
 	border-width: 0.2rem;
 	border-radius: 5px;
 	border-color: black;
 	text-decoration: none;
-	color: black;
-	background-color: DarkTurquoise;
 	border-radius: 3px;
 	padding: 0.3rem;
 	display: inline-block;
@@ -187,6 +186,10 @@ input[type=submit]:active {
   margin: 1rem auto;
 }
 
+nav button{
+	color: white;
+}
+
 /*moviles*/
 @media screen and (max-width: 640px){
 	img{
@@ -252,6 +255,13 @@ input[type=submit]:active {
 
 	#clientesSocios img{
 		width: 190%;
+	}
+	
+	.nav-link:active, #redesSociales [href]:active{
+		text-decoration: none;
+		background-color: #9E9E9E;
+		padding: 0.1rem;
+		border-radius: 3px;
 	}
 }
 
@@ -326,6 +336,17 @@ input[type=submit]:active {
 	#clientesSocios img{
 		width: 200%;
 	}
+	
+	.nav-link:active, #redesSociales [href]:active{
+		text-decoration: none;
+		background-color: #9E9E9E;
+		padding: 0.1rem;
+		border-radius: 3px;
+	}
+	
+	#barraNav{
+		width: 100%;
+	}
 }
 
 /*desktop*/
@@ -354,7 +375,7 @@ input[type=submit]:active {
 		border: 2px solid #555;
 	}
 	
-	nav [href]:hover, #redesSociales [href]:hover{
+	.nav-link:hover, #redesSociales [href]:hover{
 		text-decoration: none;
 		background-color: #9E9E9E;
 		padding: 0.1rem;
@@ -372,5 +393,9 @@ input[type=submit]:active {
 
 	#clientesSocios img{
 		width: 200%;
+	}
+	
+	#barraNav button{
+		display: none;
 	}
 }
