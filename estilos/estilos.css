@@ -33,8 +33,13 @@ footer{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#88bacf', endColorstr='MediumTurquoise',GradientType=0 );
 }
 
+footer i{
+	font-size: 105%;
+}
+
 header h1{
-	font-size: 190%
+	font-size: 230%;
+	padding: 1rem;
 }
 
 nav{
@@ -48,7 +53,8 @@ nav{
 
 nav [href]{
 	text-decoration: none;
-	color: black;		
+	color: black;
+	padding: 0.1rem;
 }
 
 .menu{
@@ -119,8 +125,16 @@ main{
 	font-weight: bold;
 }
 
+#redesSociales{
+	padding: 0rem;
+}
+
 #redesSociales  i{
 	color: black;
+}
+
+#redesSociales [href]{
+	padding: 0.1rem;
 }
 
 .titulo{
@@ -321,6 +335,7 @@ input[type=submit]:active {
 	nav [href]:hover, #redesSociales [href]:hover{
 		text-decoration: none;
 		background-color: #9E9E9E;
+		padding: 0.1rem;
 		border-radius: 3px;
 	}
 	
