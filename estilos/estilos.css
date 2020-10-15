@@ -133,9 +133,9 @@ main{
 	padding: 0.1rem;
 }
 
-.titulo{
-	/*font-family: Verdana, Geneva, sans-serif;*/
-}
+/*.titulo{
+	font-family: Verdana, Geneva, sans-serif;
+}*/
 
 textarea, select, input:not([type="submit"]){
   padding: 10px 15px;
@@ -212,16 +212,17 @@ input[type=submit]:active {
 	
 	iframe {
 		max-width: 90%;
-		height: 60%;
+		height: 90%;
 	}
 	
 	#sucursales div{
 		margin: 6px;
 	}
 	
-	#detalleGuitarra{
+	.detallesInstrumentos{
 		display: inline-block;
 	}
+	
 	
 	#reproductoresGuitarra iframe{
 		height: 160px;
@@ -255,6 +256,11 @@ input[type=submit]:active {
 	
 	header{
 		width: 100%;
+	}
+	
+	.reproductores{
+		width: 100%;
+		height: 18rem;
 	}
 }
 
