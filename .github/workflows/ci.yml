@@ -1,0 +1,20 @@
+name: TP-CodoACodo-Python CI Workflow
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+  schedule:
+    - cron: "0 20 * * *" # Runs daily at 8pm UTC (9pm Spanish time)
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
